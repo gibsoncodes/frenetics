@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 200px;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -14,7 +19,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +41,421 @@
     transform: rotate(360deg);
   }
 }
+
+
+.header {
+    width: 100%;
+}
+
+.header-img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+}
+
+.banner-txt {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    margin-left: 10%;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.purchase-info {
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px 50px;
+    border: solid 1px rgb(173, 173, 173);
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn-row {
+    position: relative;
+    z-index: 3;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 10%;
+    padding-top: 30px;
+}
+
+.about-us {
+    margin-left: 30px;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+#about-btn {
+    margin-left: auto;
+}
+
+#lab-btn{
+    margin-right: 38px;
+    margin-left: 20px;
+}
+
+.purchase-info:hover {
+    background-color: rgb(220, 220, 220);
+    color: black;
+}
+
+.carousel {
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+.carousel-pic {
+    width: 30%;
+}
+
+
+.main-nfts {
+    position: relative;
+    background-color: black;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    z-index: 30;
+}
+
+.nft-mov {
+    width: 100%;
+}
+
+.nft-div {
+    width: 100%;
+    margin: 15px;
+    background-color: #151515;
+    border: solid 1px rgb(34, 34, 34);
+}
+
+
+.nft-num {
+    color: white;
+    font-size: 21px;
+    text-align: left;
+    margin-left: 30px;
+    padding: 0;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.opensea-link {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.tna {
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.mint-btn {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    background-color: white;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.mint-btn:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-row {
+    margin: 0;
+    display: flex;
+    margin-left: auto;
+}
+
+.lab-text {
+    color: white;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.social-handle {
+    color: white;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+.social-link {
+    width: 50px;
+    cursor: pointer;
+}
+.insta {
+    margin-left: 30px;
+    width: 55px;
+}
+.about-txt {
+    padding: 40px;
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    line-height: 32px;
+    padding-bottom: 0;
+}
+
+.about-section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.svg-elem {
+    z-index: -1;
+}
+
+.header-animation {
+    position: fixed;
+    top: 0;
+    transform: translate(60%, -35%);
+    pointer-events: none;
+}
+
+
+.color-anim {
+    color: hsl(324, 70%, 45%);
+    animation: wheelHueColor 4s infinite;
+}
+
+/* 
+
+
+
+
+*/
+
+@keyframes wheelHueColor {
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
